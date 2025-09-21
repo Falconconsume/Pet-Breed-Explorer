@@ -21,7 +21,7 @@ const Gallery = ({ images }: { images: IBreedImage[] }) => {
             <div className="p-1">
               <Card className="w-full h-1/2">
                 <CardContent className="flex aspect-square items-center justify-center p-0">
-                  <div className="relative w-full h-48 overflow-hidden rounded">
+                  <div className="relative w-full h-64 overflow-hidden rounded">
                     <Image
                       fill
                       src={image.url}

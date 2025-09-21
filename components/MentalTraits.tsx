@@ -10,7 +10,7 @@ interface IMentalTraitsProps {
 }
 
 const HealthInformation = ({ breed }: IMentalTraitsProps) => {
-  return (
+  return breed.health_issues ? (
     <Card>
       <CardHeader className="pb-4">
         <CardTitle className="text-base">Health Information</CardTitle>
@@ -64,6 +64,8 @@ const HealthInformation = ({ breed }: IMentalTraitsProps) => {
         </div>
       </CardContent>
     </Card>
+  ) : (
+    <p className="text-center">No data Found</p>
   );
 };
 

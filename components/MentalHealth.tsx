@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { IBreedData } from "@/types/breed";
 
 const MentalHealth = ({ breed }: { breed: IBreedData }) => {
-  return (
+  return breed.intelligence ? (
     <Card>
       <CardHeader className="pb-4">
         <CardTitle className="text-base">Mental Traits</CardTitle>
@@ -28,6 +28,8 @@ const MentalHealth = ({ breed }: { breed: IBreedData }) => {
         />
       </CardContent>
     </Card>
+  ) : (
+    <p className="text-center">No data found</p>
   );
 };
 
