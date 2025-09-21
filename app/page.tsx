@@ -85,12 +85,9 @@ export default function Home() {
     );
   }
 
-  console.log(filteredBreeds, selectedValue, breeds);
-
   return (
     <div className="p-8">
       <div className="flex justify-end w-full p-4">
-        {" "}
         <AutoComplete
           selectedValue={selectedValue}
           onSelectedValueChange={setSelectedValue}
