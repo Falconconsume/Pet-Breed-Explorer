@@ -49,13 +49,7 @@ cd pet-breeds-gallery
 
 2. **Install dependencies**
 ```bash
-npm install
-# or
 yarn install
-# or
-pnpm install
-# or
-bun install
 ```
 
 3. **Set up environment variables**
@@ -77,13 +71,7 @@ NEXT_PUBLIC_DOG_KEY=your_dog_api_key_here
 
 5. **Run the development server**
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
@@ -148,18 +136,11 @@ pet-breeds-gallery/
 
 ```bash
 # Development
-npm run dev           # Start development server
+yarn dev           # Start development server
 
 # Build
-npm run build        # Build for production
-npm run start        # Start production server
-
-# Linting
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint errors
-
-# Type checking
-npm run type-check   # Run TypeScript compiler check
+yarn build        # Build for production
+yarn start        # Start production server
 ```
 
 ## 🌍 Environment Variables
@@ -175,7 +156,7 @@ npm run type-check   # Run TypeScript compiler check
 
 Build the application:
 ```bash
-npm run build
+yarn build
 ```
 
 ## 🐛 Known Issues
